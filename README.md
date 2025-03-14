@@ -1,1 +1,1 @@
-Tugas untuk memenuhi mata kulaih pemrograman web
+Tugas untuk memenuhi mata kuliah pemrograman web
