@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan Service AC</title>
+
+    <title>F1D02310003 - LayananServiceAC.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
         <div class="wrapper">
-            <div class="logo"><a href="">ServiceAC.</a></div>
+            <div class="logo">
+                <a href="#" class="tulisan-logo">Service<span>AC</span>.</a>
+            </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="index.html#Beranda">Beranda</a></li>
                     <li><a href="index.html#Teknisi">Teknisi</a></li>
                     <li><a href="index.html#Kontak">Kontak</a></li>
                     <li><a href="layanan.html" class="tbl-biru">Layanan</a></li>
@@ -23,12 +32,98 @@
         </div>
     </nav>
 
+    <div class="wrapper">
+        <section id="Layanan">
+            <div class="kolom">
+                <div class="gambarLayanan">
+                    <img src="properti/LayananAC.jpg" alt="LayananAc" width="700" height="auto">
+                </div>
+                <p class="deskripsi">Jenis Layanan Kami</p>
+                <h2>Daftar Layanan</h2>
+                <p>Berikut adalah daftar layanan yang kami sediakan dengan harga yang terjangkau:</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jenis Layanan</th>
+                            <th>Deskripsi</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Service Rutin</td>
+                            <td>Pembersihan filter, cek freon, pembersihan evaporator</td>
+                            <td>Rp 150.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Isi Freon</td>
+                            <td>Penambahan freon AC yang berkurang</td>
+                            <td>Rp 250.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Perbaikan Kerusakan</td>
+                            <td>Diagnosis dan perbaikan kerusakan AC</td>
+                            <td>Rp 300.000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Pemasangan AC Baru</td>
+                            <td>Jasa instalasi AC baru termasuk material standar</td>
+                            <td>Rp 450.000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Bongkar Pasang</td>
+                            <td>Pemindahan lokasi AC</td>
+                            <td>Rp 350.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="booking">
+            <div class="kolom">
+                <p class="deskripsi">Pesan Layanan</p>
+                <h2>Form Pemesanan</h2>
+                <p>Silahkan isi form berikut untuk memesan layanan service AC kami:</p>
+                <form action="#" method="post">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required><br>
+                    <label for="layanan">Jenis Layanan:</label>
+                    <select id="layanan" name="layanan">
+                        <option value="">Pilih Layanan</option>
+                        <option value="Service Rutin">Service Rutin</option>
+                        <option value="Isi Freon">Isi Freon</option>
+                        <option value="Perbaikan Kerusakan">Perbaikan Kerusakan</option>
+                        <option value="Pemasangan AC Baru">Pemasangan AC Baru</option>
+                        <option value="Bongkar Pasang">Bongkar Pasang</option>
+                    </select><br>
+                    <label for="kontak">Nomor HP:</label>
+                    <input type="text" id="kontak" name="kontak" required><br>
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" required><br>
+                    <label for="date">Tanggal:</label>
+                    <input type="date" id="date" name="date" required><br>
+                    <label for="tambahan">Tambahan</label>
+                    <input type="text" id="tambahan" name="tambahan"><br><br>
+                    <button type="submit">Pesan</button><br><br>
+                    <button type="reset">Batalkan</button>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <div id="Kontak">
         <div class="wrapper">
             <div class="footer">
                 <div class="footer-section">
-                    <h3>ServiceAC</h3>
+                    <h3>ServiceAC.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, corporis.</p>
                 </div>
                 <div class="footer-section">
@@ -50,7 +145,7 @@
 
         <div id="copyright">
             <div class="wrapper">
-                &copy; 2022. <a href="">ServiceAC.</a> All Rights Reserved.
+                &copy; 2025. <a href="">ServiceAC.</b> All Rights Reserved.
             </div>
         </div>
     </div>

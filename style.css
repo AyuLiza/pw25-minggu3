@@ -7,7 +7,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -18,10 +18,15 @@ body {
 
 .logo a {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 700;
     float: left;
-    font-family: courier;
+    font-family: Poppins;
+    font-style: italic;
     color: #205781;
+}
+
+.logo .tulisan-logo span {
+    color: #a2c2db;
 }
 
 .menu {
@@ -36,9 +41,9 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.323);
     z-index: 1;
-    border: 1px solid #205781;
+    border: 1px solid rgba(205, 231, 252, 0.518);
 }
 
 nav ul {
@@ -77,23 +82,23 @@ section {
 
 .kolom .deskripsi {
     font-size: 20px;
-    font-weight: bold;
-    font-family: 'comic sans ms';
-    color: #2DAA9E;
+    font-weight: 400;
+    font-family: 'Poppins';
+    color: #205781;
 }
 
 h2 {
-    font-family: 'comic sans ms';
-    font-weight: 800;
+    font-family: 'Poppins';
+    font-weight: 700;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #2DAA9E;
+    color: #205781;
     width: 100%;
     line-height: 50px;
 }
 
 a.tbl-biru {
-    background: #4F959D;
+    background: #a2c2db;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -103,7 +108,7 @@ a.tbl-biru {
 }
 
 a.tbl-biru:hover {
-    background: #FF8989;
+    background: #205781;
     text-decoration: none;
 }
 
@@ -135,15 +140,15 @@ p {
 }
 
 .kartu-teknisi p {
-    font-family: 'comic sans ms';
+    font-family: 'Poppins';
     font-weight: 800;
     font-size: 20px;
     text-align: center;
-    color: #2DAA9E;
+    color: #205781;
 }
 
 #Kontak {
-    background: #dedede;
+    background: rgba(248, 243, 243, 0.473);
     padding: 50px 0px 50px 0px;
     margin-top: 50px;
 }
@@ -162,11 +167,11 @@ p {
 }
 
 h3 {
-    font-family: 'comic sans ms';
-    font-weight: 800;
+    font-family: 'Poppins';
+    font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #2DAA9E;
+    color: #a2c2db;
     width: 100%;
     line-height: 50px;
 }
@@ -176,6 +181,96 @@ h3 {
     width: 100%;
     padding: 50px 0px 50px 0px;
     margin-top: 50px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #cecece;
+    text-align: left;
+}
+
+th {
+    background: rgba(162, 194, 219, 0.833);
+    color: rgba(9, 9, 9, 0.712);
+}
+
+tr:nth-child(even) {
+    background: #f1f0f0;
+}
+
+.form-container {
+    background: rgba(248, 243, 243, 0.473);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container h3 {
+    text-align: center;
+    color: #205781;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Poppins';
+    color: #205781;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a2c2db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #205781;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #a2c2db;
+}
+
+.gambarLayanan img {
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -211,5 +306,10 @@ h3 {
 
     section img {
         display: block;
+    }
+
+    .table-container,
+    .form-container {
+        width: 90%;
     }
 }
