@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
+.pembungkus {
     width: 1100px;
     margin: auto;
     position: relative;
@@ -274,7 +274,7 @@ button:hover {
 }
 
 @media screen and (max-width: 991.98px) {
-    .wrapper {
+    .pembungkus {
         width: 90%;
     }
 
